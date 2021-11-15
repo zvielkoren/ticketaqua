@@ -6,7 +6,7 @@ from ez import *
 
 intents = discord.Intents().all()
 prefix="-"
-
+#test
 client = commands.Bot(command_prefix=prefix, intents=intents)
 client.remove_command("help") #deletes the default help command
 DiscordComponents(client)
