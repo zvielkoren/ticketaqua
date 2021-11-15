@@ -1,1 +1,1 @@
-worker: python freeticket.py
+worker: python freetickets.py
