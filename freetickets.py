@@ -36,8 +36,7 @@ async def send_ticket_command(ctx):#after the message of the open tickets has be
 async def on_button_click(button):
     msg = button.message
     user = get(client.get_all_members(), id=button.author.id)
-    guild = client.get_guild(button.guild_id)
-    Guild =  ctx.guild
+    Guild = client.get_guild(button.guild_id)
     Staff = get(Guild.roles, id=903288271294046219)
     if button.component.label==TicketEmbedButtonName:
         overwrites = {
